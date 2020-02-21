@@ -1,0 +1,381 @@
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --gold: #d1af62;
+    --grey: #777777;
+    --blackish: #333;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--blackish);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+
+/* PADDING */
+
+.ptop-xl {
+    padding-top: 130px;
+}
+ .ptop-l {
+     padding-top: 100px;
+ }
+ .ptop-m {
+    padding-top: 50px;
+}
+ .ptop-s {
+     padding-top: 25px;
+ }
+ .ptop-xs {
+    padding-top: 10px;
+}
+.ptop-xxs {
+    padding-top: 5px;
+}
+.pbtm-xl {
+    padding-bottom: 130px;
+}
+ .pbtm-l {
+     padding-bottom: 100px;
+ }
+ .pbtm-m {
+     padding-bottom: 50px;
+ }
+ .pbtm-s {
+    padding-bottom: 25px;
+}
+.pbtm-xs {
+    padding-bottom: 10px;
+}
+.pbtm-xxs {
+   padding-bottom: 5px;
+}
+.pull-r {
+    float: right;
+}
+
+/*Widths*/
+
+.w-60 {
+    width: 60%;
+}
+.w-40 {
+    width: 40%;
+}
+.w-80 {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: #080d15;
+    opacity: .5;
+}
+
+.navbar-anguz .navbar-nav .nav-link, .navbar-anguz .navbar-brand {
+    color: #333;
+}
+
+.navbar-anguz .navbar-nav .nav-link:hover, .navbar-anguz .navbar-nav .active>.nav-link {
+    color: var(--gold);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link, .footer-item {
+    padding-right: 3rem;
+    padding-left: .5rem;
+}
+
+.navbar {
+    padding: 1em 3em;
+}
+
+.carousel-caption {
+    text-align: left;
+    top: 25%;
+    z-index: 1;
+    bottom: 0px;
+}
+
+.carousel-caption span i, .whats-on span i {
+    padding-left: 10px;
+}
+
+.carousel-caption span a, .carousel-item h1 a {
+    color: white;
+}
+
+.carousel-caption span a:hover, .card-footer span a:hover {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.carousel-item h1 a:hover {
+    text-decoration: none;
+}
+
+.carousel-indicators li {
+    width: 10px;
+}
+
+.carousel-indicators {
+    justify-content: left;
+    bottom: 60px;
+}
+
+/* Primary Buttton */
+
+a.btn-ag {
+    display: inline-block;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bolder;
+    border-radius: .3em;
+  }
+  
+  a.btn-ag span {
+    display: inline-block;
+    padding: 10px 40px;
+    transition: transform 0.4s;
+    color: var(--gold);
+  }
+  
+  a.btn-ag .t2 {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    color: #fff;
+    background-color: var(--gold);
+    transform: translateY(100%);
+  }
+  
+  a.btn-ag:hover .t1 {
+    transform: translateY(-100%);
+  }
+  
+  a.btn-ag:hover .t2 {
+    transform: translateY(0);
+  }
+
+  /* Secondary Button */
+
+  a.btn-ag-sec {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bolder;
+    border-radius: .3em;
+  }
+  
+  a.btn-ag-sec span {
+    display: inline-block;
+    padding: 10px 40px;
+    transition: transform 0.4s;
+    color: white;
+  }
+  
+  a.btn-ag-sec .t2 {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    color: var(--gold);
+    background-color: white;
+    transform: translateY(100%);
+  }
+  
+  a.btn-ag-sec:hover .t1 {
+    transform: translateY(-100%);
+  }
+  
+  a.btn-ag-sec:hover .t2 {
+    transform: translateY(0);
+  }
+
+/* ________________________*/
+
+
+  a.tag-ag {
+    display: inline-block;
+    color: white;
+    background-color: var(--gold);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: .3em;
+  }
+  
+  a.tag-ag span {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bolder;
+  }
+
+  .come-in {
+        transform: translateY(150px);
+        animation: come-in 0.8s ease forwards;
+    }
+    .come-in:nth-child(odd) {
+        animation-duration: 0.6s;
+    }
+
+    @keyframes come-in {
+        to { transform: translateY(0); }
+    }
+
+    .img-fixed {
+        object-fit: cover;
+    }
+     .carousel-item img {
+         width: 1400px;
+         height: 700px;
+     }
+
+    .feature-pod .col-md-4 span {
+        text-transform: uppercase;
+        font-size: .9em;
+        color: var(--grey);
+    }
+
+    .feature-pod img {
+        width: 500px;
+        height: 250px;;
+    }
+
+    .feature-pod h3, .whats-on h4 {
+        padding-top: 20px;
+        font-weight: bolder;
+    }
+
+    .whats-on .card {
+        border: 1px solid var(--gold);
+        transition: 1s;
+        min-height: 320px;
+    }
+  
+    .whats-on .card:hover {
+        border: 0px solid var(--gold);
+        transition: .3s;
+        box-shadow: 0px 4px 20px 1px #88888817;
+    }
+
+    .whats-on .card-footer {
+        background-color: transparent;
+        border-top: transparent;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .whats-on span a {
+        color: var(--blackish);
+    }
+
+    .whats-on .card-body {
+        padding: 2.5rem;
+    }
+
+    .subscribe {
+        color: #fff;
+        background-color: var(--gold);
+    }
+
+    .subscribe .form-control {
+        height: calc(2.23em + .75rem + 2px);
+    }
+
+    .social span {
+        padding: 0em .5em;
+    }
+
+    .social span a {
+        color: var(--grey);
+    }
+
+    .social span a:hover {
+        color: var(--gold);
+    }
+
+  @media only screen and (max-width: 768px) {
+      h1 {
+          font-size: 2rem;
+      }
+      header h1 {
+          font-size: 2.5em;
+          width: 80%;
+      }
+
+      .ptop-l {
+        padding-top: 50px;
+      }
+
+      .pbtm-l {
+        padding-bottom: 50px;
+      }
+
+      p {
+          font-size: 1em;;
+      }
+      .w-60, .w-40, .w-80 {
+          width: 100%;
+      }
+      .carousel-caption {
+          left: 12%;
+      }
+
+      .carousel-caption p {
+        width: 78%;
+    }
+
+    .carousel-item .w-100 {
+        width: auto !important;
+    }
+
+    .carousel-item .d-none {
+        display: block !important;
+    }
+
+    .navbar {
+        padding: 1em 1em;
+        text-align: center;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .whats-on .col-md-6 {
+        padding-top: 20px;
+    }
+    .whats-on .card-body {
+        padding: 1.25rem;
+    }
+    .whats-on .card-footer {
+        background-color: transparent;
+        border-top: transparent;
+        padding: 1.5rem 1.25rem;
+    }
+    .gallery h1 {
+        padding-top: 20px;
+    }
+
+  }
