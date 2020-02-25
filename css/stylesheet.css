@@ -5,6 +5,7 @@ html {
 :root {
     --gold: #d1af62;
     --grey: #777777;
+    --grey2: #ebebeb;
     --blackish: #333;
 }
 
@@ -233,6 +234,21 @@ a.btn-ag {
     font-weight: bolder;
   }
 
+  a.tag-ag-blog {
+    display: inline-block;
+    background-color: var(--grey2);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: .3em;
+  }
+  
+  a.tag-ag-blog span {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #777;
+  }
+
   .come-in {
         transform: translateY(150px);
         animation: come-in 0.8s ease forwards;
@@ -269,6 +285,10 @@ a.btn-ag {
         font-weight: bolder;
     }
 
+    .feature-pod .col-md-4 {
+        padding-top: 30px;
+    }
+
     .whats-on .card {
         border: 1px solid var(--gold);
         transition: 1s;
@@ -299,13 +319,13 @@ a.btn-ag {
         color: #fff;
         background-color: var(--gold);
     }
-
-    .subscribe .form-control {
+    
+    .subscribe .form-control, .sub .form-control {
         height: calc(2.23em + .75rem + 2px);
     }
 
     .social span {
-        padding: 0em .5em;
+        padding-left: .5em;
     }
 
     .social span a {
@@ -314,6 +334,105 @@ a.btn-ag {
 
     .social span a:hover {
         color: var(--gold);
+    }
+
+    .about-hd {
+        height: 80vh;
+        background-image: url('../img/test.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+      }
+
+      .t-right {
+          text-align: right;
+      }
+
+      .team img {
+          width: 350px;
+          height: 350px;
+          filter: grayscale(100%);
+      }
+
+      .team h2 {
+          font-family: 'playfair Display';
+      }
+
+    .tab {
+        overflow: hidden;
+        background-color: #f0f0f0;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        float: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    
+    .tab button.active {
+        background-color: var(--gold);
+        color: white;
+    }
+    
+    .tabcontent {
+        display: none;
+        border-top: none;
+    }
+
+    .tabcontent.active {
+        display: block;
+    }
+
+    .blog-con img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .blog-deet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .blog-deet span {
+        padding-left: 30px;
+        text-transform: capitalize;
+    }
+
+    .press-content p {
+        font-size: 1.3em;
+    }
+
+    .press-content-img img {
+        width: 900px;
+        height: 400px;
+
+    }
+
+    /*_________Pagination__________*/
+
+    .feature-pod .page-item.active .page-link {
+        background-color: var(--gold);
+        border-color: var(--gold);
+    }
+
+    .feature-pod .page-link {
+        color: var(--blackish);
+    }
+
+    .feature-pod .page-link:hover {
+        color: #fff;
+        background-color: var(--gold);
+        border-color: var(--gold);
     }
 
   @media only screen and (max-width: 768px) {
@@ -376,6 +495,23 @@ a.btn-ag {
     }
     .gallery h1 {
         padding-top: 20px;
+    }
+    .t-right {
+        text-align: initial;
+    }
+    .social span {
+        padding-right: .5em;
+        padding-left: 0em;
+    }
+    .team h2 {
+        padding-top: 20px;
+    }
+    .tab {
+        display: flex;
+        flex-flow: column;
+    }
+    .press-content p {
+        font-size: initial;
     }
 
   }
