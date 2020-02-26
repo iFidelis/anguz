@@ -29,12 +29,11 @@ if(localStorage.getItem('theme') == "true") {
 }
 }
 // Add an onload listener
-document.body.addEventListener("load", setThemeOnLoad);
-function setThemeOnLoad() {
- var element = document.body;
-  if(localStorage.getItem('theme') == "true") {
-  element.classList.add("dark-mode");
-} else {
- element.classList.remove("dark-mode");
-}
+window.onload = function() {
+  var element = document.body;
+   if(localStorage.getItem('theme') == "true") {
+   element.classList.add("dark-mode");
+ } else {
+  element.classList.remove("dark-mode");
+ }
 }
