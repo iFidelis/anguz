@@ -12,3 +12,29 @@ function viewTeam(evt, teamName) {
   document.getElementById(teamName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+//__________Dark Mode Control________
+
+// Toggle the theme state
+let darkTheme = false;
+function toggleDark() {
+  var element = document.body;
+  darkTheme = !darkTheme;
+   localStorage.getItem('theme') !== null ? localStorage.removeItem('theme') : null;
+   localStorage.setItem('theme', darkTheme);
+if(localStorage.getItem('theme') == "true") {
+  element.classList.add("dark-mode");
+} else {
+ element.classList.remove("dark-mode");
+}
+}
+// Add an onload listener
+document.body.addEventListener("load", setThemeOnLoad);
+function setThemeOnLoad() {
+ var element = document.body;
+  if(localStorage.getItem('theme') == "true") {
+  element.classList.add("dark-mode");
+} else {
+ element.classList.remove("dark-mode");
+}
+}

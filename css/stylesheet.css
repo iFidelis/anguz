@@ -9,6 +9,11 @@ html {
     --blackish: #333;
 }
 
+.dark-mode {
+    background-color: var(--blackish);
+    color: white;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     color: var(--blackish);
