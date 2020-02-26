@@ -19,7 +19,7 @@ h1 {
 }
 
 header h1 {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 
@@ -489,6 +489,10 @@ a.btn-ag {
       #d-mode i {
           padding-right: 10px;
       }
+
+      button:focus {
+        outline: 0px auto -webkit-focus-ring-color;
+    }
 
     
 
