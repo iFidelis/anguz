@@ -16,8 +16,23 @@ function viewTeam(evt, teamName) {
 //__________Dark Mode Control________
 
 // Toggle the theme state
+//let darkTheme = false;
+//function toggleDark() {
+//  var element = document.body;
+//  darkTheme = !darkTheme;
+//   localStorage.getItem('theme') !== null ? localStorage.removeItem('theme') : null;
+//   localStorage.setItem('theme', darkTheme);
+//if(localStorage.getItem('theme') == "true") {
+//  element.classList.add("dark-mode");
+//} else {
+// element.classList.remove("dark-mode");
+//}
+//}
+//document.querySelector(".switch").addEventListener("click", toggleDark);
+
+let btn = document.querySelector(".switch");
 let darkTheme = false;
-function toggleDark() {
+btn.addEventListener("click", e => {
   var element = document.body;
   darkTheme = !darkTheme;
    localStorage.getItem('theme') !== null ? localStorage.removeItem('theme') : null;
@@ -27,7 +42,8 @@ if(localStorage.getItem('theme') == "true") {
 } else {
  element.classList.remove("dark-mode");
 }
-}
+});
+
 // Add an onload listener
 window.onload = function() {
   var element = document.body;
