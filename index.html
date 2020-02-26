@@ -34,14 +34,17 @@
               <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html" data-toggle="modal" data-target="#ContactUs">Contact</a>
             </li>
           </ul>
-          <form class="w-40">
+          <form class="search-field">
             <input class="form-control mr-sm-2" type="search" placeholder="Search Anguz" aria-label="Search">
           </form>
         </div>
       </nav>
+      <div id="d-mode">
+        <button class="switch"><i class="fa fa-lightbulb-o"></i>Dark Mode</button>
+      </div>
       <header>
         <div id="carouselAgCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -57,12 +60,12 @@
                 <a class="tag-ag" href="#">
                   <span class="t1">Education</span>
                 </a>
-                <h1><a href="#">Anguz Partners with Wave Academy</a></h1>
+                <h1><a href="single-blog.html">Anguz Partners with Wave Academy</a></h1>
                 <p>
                   Anguz Partners will be partnering with WAVE Academy in Owerri to
                   increase employment in the region through the formation […]
                 </p>
-                <span><a href="#">Read more<i class="fa fa-caret-right"></a></i></span>
+                <span><a href="single-blog.html">Read more<i class="fa fa-caret-right"></a></i></span>
               </div>
             </div>
             <div class="carousel-item">
@@ -72,12 +75,12 @@
                 <a class="tag-ag" href="#">
                   <span class="t1">Category</span>
                 </a>
-                <h1><a href="#">Anguz Partners with Wave Academy</a></h1>
+                <h1><a href="single-blog.html">Anguz Partners with Wave Academy</a></h1>
                 <p>
                   Anguz Partners will be partnering with WAVE Academy in Owerri to
                   increase employment in the region through the formation […]
                 </p>
-                <span><a href="#">Read more<i class="fa fa-caret-right"></a></i></span>
+                <span><a href="single-blog.html">Read more<i class="fa fa-caret-right"></a></i></span>
               </div>
             </div>
             <div class="carousel-item">
@@ -87,12 +90,12 @@
                 <a class="tag-ag" href="#">
                   <span class="t1">Category</span>
                 </a>
-                <h1><a href="#">Anguz Partners with Wave Academy</a></h1>
+                <h1><a href="single-blog.html">Anguz Partners with Wave Academy</a></h1>
                 <p>
                   Anguz Partners will be partnering with WAVE Academy in Owerri to
                   increase employment in the region through the formation […]
                 </p>
-                <span><a href="#">Read more<i class="fa fa-caret-right"></a></i></span>
+                <span><a href="single-blog.html">Read more<i class="fa fa-caret-right"></a></i></span>
               </div>
             </div>
           </div>
@@ -115,7 +118,7 @@
             <img src="img/test2.jpg" class="img-fluid img-fixed rounded">
             <div class="ptop-s">
               <span>Category • Nov. 2018</span>
-              <h3>Activating Disruptors</h3>
+              <h3 title="Activating Disruptors"><a href="single-blog.html">Activating Disruptors</a></h3>
               <p>
                 The much anticipated and maiden edition of the Regional Company of the Year (RCOY) activating disruptors competition was held..
               </p>
@@ -125,7 +128,7 @@
             <img src="img/test3.jpg" class="img-fluid img-fixed rounded">
             <div class="ptop-s">
               <span>Category • Nov. 2018</span>
-              <h3>Junior Achievement Nigeria</h3>
+              <h3 title="Junior Achievement Nigeria"><a href="single-blog.html">Junior Achievement Nigeria</a></h3>
               <p>
                 Junior Achievement Nigeria (JAN) is part of Junior Achievement Worldwide, the world’s oldest and largest non-profit economic education…
               </p>
@@ -135,7 +138,7 @@
             <img src="img/test2.jpg" class="img-fluid img-fixed rounded">
             <div class="ptop-s">
               <span>Category • Nov. 2018</span>
-              <h3 title="Anguz Academy - Poineer Class Begins">Anguz Academy - Poineer...</h3>
+              <h3 title="Anguz Academy - Poineer Class Begins"><a href="single-blog.html">Anguz Academy - Poineer...</a></h3>
               <p>
                 After weeks of preparation including meeting local employers, selecting candidates and getting the initial site ready, ANGUZ is please...
               </p>
@@ -143,7 +146,7 @@
           </div>
         </div>
         <div class="text-center ptop-m">
-          <a class="btn-ag" href="#">
+          <a class="btn-ag" href="blog.html">
             <span class="t1">Show more</span>
             <span class="t2">Show more</span>
           </a>
@@ -162,7 +165,7 @@
                 <a class="tag-ag" href="#">
                   <span>Events</span>
                 </a>
-                <h4 class="card-title">Anguz Sponsors First Owerri Impact Day</h4>
+                <h4 class="card-title"><a href="single-blog.html">Anguz Sponsors First Owerri Impact Day</a></h4>
                 <p class="card-text">The South 7, a South-Eastern based investment network in partnership with DevEast and Anguz Partners held the first Owerri Impact.</p>
               </div>
               <div class="card-footer">
@@ -177,7 +180,7 @@
                 <a class="tag-ag" href="#">
                   <span class="t1">Careers</span>
                 </a>
-                <h4 class="card-title">Project Manager Vacancy at Lekki Office</h4>
+                <h4 class="card-title"><a href="single-blog.html">Project Manager Vacancy at Lekki Office</a></h4>
                 <p class="card-text">The South 7, a South-Eastern based investment network in partnership with DevEast and Anguz Partners held the first Owerri Impact.</p>
               </div>
               <div class="card-footer">
@@ -236,18 +239,60 @@
             <Span>© 2020 Anguz Partners</Span>
           </div>
           <div class="col-sm-6 social t-right">
-            <span><a href="#"><i class="fa fa-lg fa-facebook-square"></i></a></span>
-            <span><a href="#"><i class="fa fa-lg fa-twitter-square"></i></a></span>
+            <span><a href="https://facebook.com"><i class="fa fa-lg fa-facebook-square"></i></a></span>
+            <span><a href="https://twitter.com"><i class="fa fa-lg fa-twitter-square"></i></a></span>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Contact us Modal -->
+    <div class="modal fade" id="ContactUs" tabindex="-1" role="dialog" aria-labelledby="ContactUsTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-panth mod-head">
+            <h2 class="modal-title" id="ContactUsTitle">Contact Form</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName">Name</label>
+                  <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="hello@anguzpartners.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputSub">Subject</label>
+                <input type="text" class="form-control" id="inputSub" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <label for="textMsg">Message</label>
+                <textarea class="form-control" id="textMsg" rows="5" placeholder="Message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a class="btn-ag" href="blog.html">
+              <span class="t1">Submit</span>
+              <span class="t2">Submit</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="/js/slides.js"></script>
+    <script src="/js/anguz.js"></script>
   </body>
 </html>
