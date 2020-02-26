@@ -30,9 +30,10 @@ function viewTeam(evt, teamName) {
 //}
 //document.querySelector(".switch").addEventListener("click", toggleDark);
 
-let btn = document.querySelector(".switch");
+let div = document.querySelector("#d-mode");
 let darkTheme = false;
-btn.addEventListener("click", e => {
+
+div.addEventListener("click", e => {
   var element = document.body;
   darkTheme = !darkTheme;
    localStorage.getItem('theme') !== null ? localStorage.removeItem('theme') : null;

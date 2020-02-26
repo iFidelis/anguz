@@ -14,6 +14,24 @@ html {
     color: white;
 }
 
+.dark-mode #d-mode .switch {
+    background-color: white;
+    color: var(--blackish);
+    border-color: white;
+}
+
+.dark-mode .card {
+    background-color: var(--blackish);
+}
+
+.dark-mode .whats-on .card-footer span a {
+    color: white;
+}
+
+.dark-mode .navbar-anguz .navbar-nav .nav-link, .navbar-anguz .navbar-brand {
+    color: white;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     color: var(--blackish);
@@ -127,7 +145,7 @@ header h1 {
     color: white;
 }
 
-.carousel-caption span a:hover, .card-footer span a:hover {
+.carousel-caption span a:hover, .card-footer span a:hover, .dark-mode .whats-on .card-footer span a:hover {
     color: var(--gold);
     text-decoration: none;
 }
@@ -312,7 +330,7 @@ a.btn-ag {
     .whats-on .card:hover {
         border: 0px solid var(--gold);
         transition: .3s;
-        box-shadow: 0px 4px 20px 1px #88888817;
+        box-shadow: 0px 4px 20px 1px #0f0f0f17;
     }
 
     .whats-on .card-footer {
