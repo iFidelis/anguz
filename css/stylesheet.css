@@ -9,7 +9,7 @@ html {
     --blackish: #333;
 }
 
-.dark-mode {
+.dark-mode, body.dark-mode {
     background-color: var(--blackish);
     color: white;
 }
@@ -38,11 +38,12 @@ body {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 header h1 {
     font-size: 3.5em;
+    font-weight: 700;
 }
 
 
@@ -387,7 +388,7 @@ a.btn-ag {
       }
 
       .team h2, .services h2, .modal-header h2 {
-          font-family: 'playfair Display';
+          font-weight: 700;
       }
 
     .tab {
